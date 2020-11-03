@@ -6,9 +6,13 @@ import MainAppBar from "../src/components/navbar/index";
 // import SecondaryNavBar from "../src/components/navbar/secondarynav";
 import NewArrivalComponent from "../src/components/products/newarrival";
 import Banner from "../src/components/banner";
+import HotDeals from "../src/components/banner/hotdeal";
+import ValuesBanner from "../src/components/banner/valuesbanner";
+import MoreToLove from "../src/components/home/moretolove";
 import FeaturedProducts from '../src/components/products/featured';
 import AllCategories from "../src/components/products/categories/index";
 import RecommendedForYou from "../src/components/products/recommend";
+import About10Percenter from "../src/components/aboutpercenter";
 import PrimaryFooter from "../src/components/footer";
 
 const useStyles = makeStyles((theme) => ({
@@ -16,8 +20,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#eee",
   },
   container: {
-    padding: "2px 1%",
-    overflow: "hidden",
+    padding: "5px 1%",
+    // overflow: "hidden",
   },
 }))
 
@@ -32,10 +36,17 @@ export default function Index() {
         <Banner />
       </div>
       <div className={classes.container}>
+        <ValuesBanner />
+      </div>
+      <div className={classes.container}>
+        <HotDeals />
+      </div>
+
+      <div className={classes.container}>
         <FeaturedProducts />
       </div>
       <div className={classes.container}>
-        <NewArrivalComponent />
+        {/* <NewArrivalComponent /> */}
       </div>
       <div className={classes.container}></div>
       <div className={classes.container}>
@@ -43,6 +54,12 @@ export default function Index() {
       </div>
       <div className={classes.container}>
         <RecommendedForYou />
+      </div>
+      <div className={classes.container}>
+        <MoreToLove />
+      </div>
+      <div className={classes.container}>
+        <About10Percenter />
       </div>
       <PrimaryFooter />
 

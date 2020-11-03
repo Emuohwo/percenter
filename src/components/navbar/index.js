@@ -56,6 +56,10 @@ const useStyles = makeStyles((theme) => ({
     inputRoot: {
         color: "inherit",
     },
+    logoImg: {
+        width: "50px",
+        height: "auto",
+    },
     inputInput: {
         padding: theme.spacing(1, 1, 1, 0),
         paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
@@ -187,7 +191,7 @@ function MainAppBar() {
                     <MenuIcon />
                 </IconButton> */}
                 <Typography className={classes.title} variant="h6" noWrap>
-                    10Percenter
+                    <img className={classes.logoImg} src="/10percented.png" alt="logo" />
                 </Typography>
                 <div className={classes.search}>
                     <div className={classes.searchIcon}>
