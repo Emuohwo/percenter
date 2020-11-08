@@ -4,14 +4,14 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import MainAppBar from "../src/components/navbar/index";
 // import SecondaryNavBar from "../src/components/navbar/secondarynav";
-import NewArrivalComponent from "../src/components/products/newarrival";
-import Banner from "../src/components/banner";
-import HotDeals from "../src/components/banner/hotdeal";
-import ValuesBanner from "../src/components/banner/valuesbanner";
+import NewArrivalComponent from "../src/components/home/products/newarrival";
+import Banner from "../src/components/home/banner";
+import HotDeals from "../src/components/home/banner/hotdeal";
+import ValuesBanner from "../src/components/home/banner/valuesbanner";
 import MoreToLove from "../src/components/home/moretolove";
-import FeaturedProducts from '../src/components/products/featured';
-import AllCategories from "../src/components/products/categories/index";
-import RecommendedForYou from "../src/components/products/recommend";
+import FeaturedProducts from '../src/components/home/products/featured';
+import AllCategories from "../src/components/home/products/categories/index";
+import RecommendedForYou from "../src/components/home/products/recommend";
 import About10Percenter from "../src/components/aboutpercenter";
 import PrimaryFooter from "../src/components/footer";
 
